@@ -18,8 +18,17 @@
 <body>
 
     <div class="left">
-        <div id="editor">&ltdiv class = "font-light px-10"&gt
-
+        <div id="editor">&ltdiv class="font-light px-10"&gt
+    &ltp class="pb-20"&gtEnjoy your morning cup of sunshine is this clean modern mug.&lt/p&gt
+    &ltp class="font-medium"&gtFeatures:&lt/p&gt
+    &ltul class="list-disc pl-20 pb-20"&gt
+        &ltli&gt16 oz&lt/li&gt
+        &ltli&gtCeramic&lt/li&gt
+        &ltli&gtGlossy interior, rim and handle&lt/li&gt
+        &ltli&gtLarge handle&lt/li&gt
+        &ltli&gtLeaf and drop logo&lt/li&gt
+    &lt/ul&gt
+    &ltp&gt&ltspan class="font-medium"&gtCare:&lt/span&gt Top rack dishwasher safe. Microwave safe. &lt/p&gt
 &lt/div&gt</div>
     </div>
 
@@ -389,6 +398,8 @@
         });
         editor.setAutoScrollEditorIntoView(false);
         editor.resize();
+
+        editor.getSession().setUseWrapMode(true);
 
         // Function to update the textLongDescription div
         function updateLongDescription() {
